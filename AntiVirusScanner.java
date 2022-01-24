@@ -147,6 +147,10 @@ public class AntiVirusScanner {
 		 try {
 			 //import connection from Keys.java
 		 	DatabaseConnection  = Keys.DatabaseConnection();
+			if (DatabaseConnection == null) {
+				JOptionPane.showMessageDialog(frame, "No Internet Connection");
+				System.exit(0);
+			}
 			Statement StatementSelect = DatabaseConnection.createStatement();
 			ResultSet DataResult; //create a return data object
 			DataResult = StatementSelect.executeQuery("SELECT * from VirusMD5");

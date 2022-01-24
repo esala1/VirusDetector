@@ -2,11 +2,14 @@
 ## Eliyas Sala
 
 ## Description
-* This Research-based project implemenets signature-based model to scan for viruses. The tools I used are below:
+* This research-based project implements a signature-based model to scan for viruses. The tools I used are below:
     * Java(Swing API for designing the GUI, event and action listeners)
     * Postgres Driver 
     * Heroku's PostgreSQL database
-* The folder "Executable Application" contains the JAR application for you to open and test. When you run it, it will prompt you to choose a directory path to search for viruses. 
+* The folder "Executable Application" contains the JAR application for you to open and test. 
+* Make sure you have an internet connection, if not it will display an error message and exit the program itself.
+![](Screenshots/Screenshot0.png)
+* When you run it correctly, it will prompt you to choose a directory path to search for viruses. 
 ![](Screenshots/Screenshot1.png)
 * Then, you click "Scan" button to scan for viruses in that directory. I have attached test cases in the "Dummy Files" folder containing a virus-infected batch script. Note: please do not open that file since it will crash your computer :)
 ![](Screenshots/Screenshot2.png)
